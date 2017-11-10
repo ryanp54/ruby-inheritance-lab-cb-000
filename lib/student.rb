@@ -1,8 +1,8 @@
-require 'lib/user.rb'
+require './user.rb'
 
 class Student < User
   attr_accessor :knowledge
-  
+
   def initialize(first, last)
     @first_name = first
     @last_name = last
@@ -10,7 +10,7 @@ class Student < User
   end
 
   def learn(string)
-    knowledge << string    
+    knowledge << string
   end
-  
+
 end
